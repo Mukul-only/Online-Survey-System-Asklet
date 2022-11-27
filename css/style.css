@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Roboto:wght@300;400;700&family=Ubuntu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+    
+}
+h1{
+    font-size:3rem;
+
+}
+h2{
+    font-size:2rem;
+}
+h3{
+    font-size: 1.5rem;
+
+
+}
+p{
+    font-family: 'Roboto',sans-serif;
+    font-size:1.25rem;
+    
+    line-height:1.8rem;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+
+/* navigation bar */
+#navigation{
+    padding:1% 10%;
+    position: fixed;
+    width: 100vw;
+    background-color: white;
+    
+}
+.scroll{
+    box-shadow: 0 1px 15px 2px rgb(217, 217, 217);
+}
+.brand-name{
+    display:inline;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    
+}
+.brand-name a{
+    color:#38b000;
+}
+nav ul{
+    list-style-type:none ;
+    display:inline;
+    margin-left:25%;
+    
+}
+nav ul li{
+    display:inline-block;
+    margin:-2px;
+    padding:0 2%;
+    font-size:0.9rem;
+    color:#01010186;
+    
+}
+nav ul li:hover{
+    color:rgb(29, 29, 29);
+}
+
+.sign{
+    display:inline;
+    margin-left:20%;
+}
+.btn-login {
+    margin:0 2px;
+    padding:3px 5px;
+    border:none;
+    background-color: white;
+    cursor: pointer;
+    
+    
+}
+
+.btn-signup {
+    margin:0 2px;
+    padding:7px 10px;
+    border:none;
+    border-radius:6px;
+    font-family:'Poppins',sans-serif;
+    color:white;
+    background-color: #70e000;
+    cursor: pointer;
+}
+
+.btn-signup:hover{
+ background-color: #38b000;
+}
+.nav-l{
+    color:black;
+}
+.nav-l:hover{
+    text-decoration: underline  ;
+}
+.nav-s{
+    color:white;
+}
+
+
+
+
+
+/* title */
+#title{
+    padding:7% 10%;
+    display: flex;
+    justify-content: center;
+}
+.title-image img{
+    width: 600px;
+}
+
+.catch-phrase{
+    margin-right:80px;
+}
+.title-sign{
+    margin-top:100px;
+    
+}
+.title-sign .btn-login{
+    border:1px solid #70e000;
+    border-radius:6px;
+    padding:9px 12px;
+    font-size:1.2rem;
+    margin-left:30px;
+}
+.title-sign .btn-login:hover{
+    background-color: #70e000;
+    color:white;
+    transition: all 0.4s;
+}
+.title-sign .btn-signup{
+    padding:7px 12px;
+    font-size: 1.2rem;
+}
+
+
+
+
+/* footer */
+#footer{
+    background-image: linear-gradient(to  right,#38b000,#9ef01a);
+    padding:3% 14% 1%;
+    color:white;
+    text-align: center;
+}
+#footer p{
+    text-align: center;
+    font-size:0.8rem ;
+}
+.f{
+    margin:0 6px;
+}
+
