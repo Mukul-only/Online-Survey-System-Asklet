@@ -28,3 +28,13 @@ function verifyPassword(){
         return false;
     }
 }
+
+document.querySelector("#password").addEventListener("focus" , () => {
+    document.querySelector("#messege").innerHTML="";
+    document.querySelector("#con-messege").innerHTML="";
+});
+
+document.querySelector("#con-password").addEventListener("focus" , () => {
+    document.querySelector("#messege").innerHTML="";
+    document.querySelector("#con-messege").innerHTML="";
+});
