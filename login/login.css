@@ -67,7 +67,7 @@ input:hover::placeholder{
 }
 input:focus{
     border:1px solid #01e973;
-    box-shadow:0 0 15px 2px #01e973;
+    /* box-shadow:0 0 15px 2px #01e973; */
 }
 input:focus::placeholder{
     color:transparent;
