@@ -95,3 +95,6 @@ document.querySelectorAll("i")[1].addEventListener("click", () => {
     }
 });
 
+document.querySelector("#DOB").addEventListener("focus", () => {
+    document.querySelector("#DOB").type="date";
+});
