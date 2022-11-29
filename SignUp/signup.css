@@ -175,7 +175,7 @@ input[type="reset"]:hover{
 
 
 /* ***************************************** PASSWORD *************************************** */
-/* .pwd{
+.pwd{
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -184,7 +184,7 @@ input[type="reset"]:hover{
     border-radius: 12px;
     border:1px solid #ababab;
 }
-input[type="password"]
+#password,#con-password
 {
     border:none;
     outline: none;
@@ -192,9 +192,13 @@ input[type="password"]
     margin:0;
 
 }
-i{
+.i{
     cursor: pointer;
-} */
+    opacity:0;
+}
+.show{
+    opacity:1;
+}
 
 /* footer */
 #footer{

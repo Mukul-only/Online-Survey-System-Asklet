@@ -38,3 +38,60 @@ document.querySelector("#con-password").addEventListener("focus" , () => {
     document.querySelector("#messege").innerHTML="";
     document.querySelector("#con-messege").innerHTML="";
 });
+
+
+
+
+//  password
+document.querySelector("#password").addEventListener("focusin", () => {
+    document.querySelector("i").classList.add("show");
+    document.querySelectorAll(".pwd")[0].style.border="1px solid #01e973";
+});
+document.querySelector("#password").addEventListener("focusout", () => {
+    
+    document.querySelectorAll(".pwd")[0].style.border="1px solid #ababab";
+});
+
+
+document.querySelector("#con-password").addEventListener("focusin", () => {
+    document.querySelectorAll("i")[1].classList.add("show");
+    document.querySelectorAll(".pwd")[1].style.border="1px solid #01e973";
+});
+
+document.querySelector("#con-password").addEventListener("focusout", () => {
+    
+    document.querySelectorAll(".pwd")[1].style.border="1px solid #ababab";
+});
+
+
+
+// show and hide password
+document.querySelectorAll("i")[0].addEventListener("click", () => {
+    if(document.querySelector("#password").type === "password")
+    {
+        document.querySelector("#password").type="text";
+        document.querySelectorAll("i")[0].classList.remove("fa-solid","fa-eye");
+        document.querySelectorAll("i")[0].classList.add("fa-solid","fa-eye-slash");
+    }
+    else{
+        document.querySelector("#password").type="password";
+        document.querySelectorAll("i")[0].classList.remove("fa-solid","fa-eye-slash");
+        document.querySelectorAll("i")[0].classList.add("fa-solid","fa-eye");
+    }
+});
+
+
+document.querySelectorAll("i")[1].addEventListener("click", () => {
+    if(document.querySelector("#con-password").type === "password")
+    {
+        document.querySelector("#con-password").type="text";
+        document.querySelectorAll("i")[1].classList.remove("fa-solid","fa-eye");
+        document.querySelectorAll("i")[1].classList.add("fa-solid","fa-eye-slash");
+    }
+    else{
+        document.querySelector("#con-password").type="password";
+        document.querySelectorAll("i")[1].classList.remove("fa-solid","fa-eye-slash");
+        document.querySelectorAll("i")[1].classList.add("fa-solid","fa-eye");
+    }
+});
+
