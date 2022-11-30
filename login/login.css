@@ -87,6 +87,31 @@ a:hover{
     text-decoration: underline;
 }
 
+/* password */
+.pwd{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    padding:5px 12px 5px 10px ;
+    margin:10px 0;
+    border-radius: 12px;
+    border:1px solid #ababab;
+    
+}
+#password{
+    margin:0;
+    border:none;
+    padding:5px 0;
+    border-radius: 0;
+}
+.i{
+    cursor: pointer;
+    opacity:0;
+}
+.pwd:hover{
+    border:1px solid #01e973;
+}
 /* login button */
 input[type="submit"]{
     color:rgb(0, 0, 0);
